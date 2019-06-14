@@ -350,9 +350,40 @@ final class MyMostPerfectClass{}//不能被继承
 
 **4.primitive主数据类型的包装**
 
+无法将primitive主数据类型直接放在ArrayList或者HashMap中，需要进行包装成类。
 
+* Boolean
+* Character
+* Byte
+* Short
+* Interger
+* Long
+* Float
+* Double
 
+autoboxing功能：自动包装
 
+```java
+puiblic void doNumsNewWay(){
+    ArrayList<Interger>listOfNumbers = new ArrayList<Interger>();
+    listOfNumbers.add(3);
+    int num = listOfNumbers.get(0);    //自动解开Interger的包装。
+}
+```
+
+**5.数字的格式化**
+
+```java
+String.format("%[argument number][flag][width][.precison]type")
+```
+
+[flag]：特定类型的选项，如加逗号或正负号
+
+[width]：最小字符数
+
+[.persion]：精确度
+
+[type]：类型标识
 
 
 
